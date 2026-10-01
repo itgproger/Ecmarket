@@ -2,6 +2,8 @@
 
 NOWA is a responsive PC components and gaming hardware storefront built with React, Vite, Tailwind CSS, React Router, and Lucide React.
 
+[Open Ecmarket](https://itgproger.github.io/Ecmarket/)
+
 ## Features
 
 - Product search, filters, and sorting
