@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-line; }
+  html { @apply scroll-smooth bg-ink; }
+  body { @apply m-0 bg-ink font-sans text-zinc-100 antialiased; }
+  button, input, select, textarea { font: inherit; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  ::selection { @apply bg-accent text-white; }
+}
+
+@layer components {
+  .site-container { @apply mx-auto w-full max-w-site px-5 sm:px-8 lg:px-10; }
+  .section-space { @apply py-16 sm:py-20 lg:py-24; }
+  .section-title { @apply text-2xl font-bold tracking-tight text-white sm:text-3xl; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500; }
+  .input-field { @apply w-full rounded-lg border border-line bg-panel px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-accent focus:ring-2 focus:ring-accent/20; }
+  .focus-ring { @apply outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-ink; }
+}
+
+.hero-grid {
+  background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { scrollbar-width: none; }

@@ -1,0 +1,23 @@
+{
+  "name": "nowa-store",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "autoprefixer": "latest",
+    "lucide-react": "latest",
+    "postcss": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "tailwindcss": "^3.4.17",
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
